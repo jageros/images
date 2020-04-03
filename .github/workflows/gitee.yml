@@ -26,6 +26,6 @@ jobs:
     - name: Push to gitee
       run: |
         git switch -c master
-        git remote add gitee git@gitee.com:befovy/images.git
+        git remote add gitee git@gitee.com:jayos/images.git
         imgbot=`git rev-parse HEAD | git show -s --format='%ae' | grep imgbot` || echo "no imgbot"
         [[ ! -z "$imgbot" ]] && git push --set-upstream gitee master -f || echo "Ingore push"
