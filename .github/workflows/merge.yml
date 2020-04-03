@@ -1,8 +1,14 @@
-name: MergeImgbot
+name: Merge Imgbot
 
 on:
-  push:
-    branches: [imgbot]
+  pull_request:
+    types:
+      - opened
+      - ready_for_review
+  pull_request_review:
+    types:
+      - submitted
+  status: {}
 
 jobs:
   automerge:
