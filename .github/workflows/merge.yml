@@ -1,4 +1,4 @@
-name: Merge Imgbot
+name: MergeImgbot
 
 on:
   pull_request:
